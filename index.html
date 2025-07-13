@@ -2,16 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>MFILM</title>
+  <title>Main Page - MPhotography</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f2f5;
-      color: #333;
-    }
-
     .container {
       max-width: 900px;
       margin: auto;
@@ -110,7 +102,32 @@
       text-align: center;
       margin-top: 30px;
     }
+  
+    .logo {
+      text-align: center;
+    }
 
+    .logo img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain; /* Use contain to preserve transparent edges */
+      margin-bottom: 15px;
+
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      background-color: transparent; /* Important for PNG */
+    }
+
+
+
+    @font-face {
+      font-family: 'primary';
+      src: url('assets/fonts/primary.ttf') format('trueType');
+      font-weight: normal;
+      font-style: normal;
+    }
 
 
     @media (max-width: 600px) {
@@ -118,20 +135,29 @@
         width: 90%;
       }
     }
+
+    body {
+      font-family: 'primary';
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      color: #333;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>MFILM</h1>
-
+    <div class="logo">
+      <img src="assets/software/photoshop.png" alt="Logo">
+    </div>
     <h2>About Us</h2>
     <p>
-      We are a team who takes photography and videography to a different level. We are committed to excellence and high-quality photos in every way. We can capture the whole scene and edit it to fit one's (or a group's) personal needs. Established in 2025, we can work together to capture every moment along the way. We work with DSLRs, mirrorless cameras, and drones.
+      We are a team who takes photography and videography to a different level. We are committed to excellence and high-quality photos in every way. We can capture the whole scene and edit it to fit one's (or a group's) personal needs. Established in 2025, we can work together to capture every moment along the way. We work with DSLRs, mirrorless cameras, and drones. We are based in the <b>Greater Toronto Area</b> in Ontario, Canada.
     </p>
 
     <h2>Mission Statement</h2>
     <p>
-      At MFILM, our mission is to deliver unforgettable visual experiences by capturing moments with precision, creativity, and emotion. We strive to tell compelling stories through photography and videography, combining professional-grade gear, skilled editing, and artistic vision to elevate every project we touch.
+      At MPhotography, our mission is to deliver unforgettable visual experiences by capturing moments with precision, creativity, and emotion. We strive to tell compelling stories through photography and videography, combining professional-grade gear, skilled editing, and artistic vision to elevate every project we touch.
     </p>
 
 
@@ -159,7 +185,7 @@
 
     <h2>Our Gear</h2>
     <div class="gear">
-      <div class="gear-item">
+      <div class="gear-item" onclick="toggleInfo(this)">
         <img src="assets/gear/a.jpeg" alt="Gear A" />
         <h3>Canon EOS R50</h3>
       </div>
@@ -248,8 +274,8 @@
         <p>Graphic and logo design for branding projects.</p>
       </div>
       <div class="gear-item">
-        <img src="assets/software/finalcutpro.jpeg" alt="Final Cut Pro" />
-        <h3>Final Cut Pro</h3>
+        <img src="assets/software/prempro.png" alt="Premiere Pro" />
+        <h3>Premiere Pro</h3>
         <p>Professional video editing and color grading.</p>
       </div>
     </div>
