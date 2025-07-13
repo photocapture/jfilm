@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>MFILM</title>
   <style>
     body {
@@ -39,7 +39,7 @@
       line-height: 1.6;
     }
 
-    .team, .gear {
+    .team, .gear, .lenses {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -47,7 +47,7 @@
       margin-top: 20px;
     }
 
-    .team-member, .gear-item {
+    .team-member, .gear-item, .lens-item {
       background: white;
       border-radius: 15px;
       padding: 20px;
@@ -57,11 +57,11 @@
       transition: transform 0.2s ease;
     }
 
-    .team-member:hover, .gear-item:hover {
+    .team-member:hover, .gear-item:hover, .lens-item:hover {
       transform: translateY(-5px);
     }
 
-    .team-member img, .gear-item img {
+    .team-member img, .gear-item img, .lens-item img {
       width: 100px;
       height: 100px;
       object-fit: cover;
@@ -70,13 +70,13 @@
       margin-bottom: 15px;
     }
 
-    .team-member h3, .gear-item h3 {
+    .team-member h3, .gear-item h3, .lens-item h3 {
       margin: 10px 0 5px;
       font-size: 1.2em;
       color: #2c3e50;
     }
 
-    .team-member p, .gear-item p {
+    .team-member p, .gear-item p, .lens-item p {
       font-size: 0.95em;
       color: #555;
       margin: 0;
@@ -93,7 +93,7 @@
     }
 
     @media (max-width: 600px) {
-      .team-member, .gear-item {
+      .team-member, .gear-item, .lens-item {
         width: 90%;
       }
     }
@@ -104,26 +104,28 @@
     <h1>MFILM</h1>
 
     <h2>About Us</h2>
-    <p>We are a team who takes photography and videography to a different level. We are committed to excellence and high-quality photos in every way. We can capture the whole scene and edit it to fit one's (or a group's) personal needs. Established in 2025, we can work together to capture every moment along the way. We work with DSLRs, mirrorless cameras, and drones.</p>
+    <p>
+      We are a team who takes photography and videography to a different level. We are committed to excellence and high-quality photos in every way. We can capture the whole scene and edit it to fit one's (or a group's) personal needs. Established in 2025, we can work together to capture every moment along the way. We work with DSLRs, mirrorless cameras, and drones.
+    </p>
 
     <h2>Meet Our Team</h2>
     <div class="team">
       <div class="team-member">
-        <img src="assets/meetourteam/a.jpeg" alt="Photo of Person A">
+        <img src="assets/meetourteam/a.jpeg" alt="Photo of Person A" />
         <h3>Jett Mu</h3>
         <ul>
-          <li>Primary Photographer</li>
+          <li>Primary Photographer & Videographer</li>
           <li>100 Hours of Drone Flight Time</li>
           <li>Canadian Basic Drone Pilot</li>
           <li>3000+ Total Photos Taken</li>
         </ul>
       </div>
       <div class="team-member">
-        <img src="assets/meetourteam/b.jpeg" alt="Photo of Person B">
+        <img src="assets/meetourteam/b.jpeg" alt="Photo of Person B" />
         <h3>Auston Mu</h3>
         <ul>
           <li>Primary Photo Editor</li>
-          <li>>100 Hours of Premiere Pro, Lightroom, and Photoshop</li>
+          <li>>100 Combined Hours of Illustator, Lightroom, and Photoshop</li>
         </ul>
       </div>
     </div>
@@ -131,35 +133,76 @@
     <h2>Our Gear</h2>
     <div class="gear">
       <div class="gear-item">
-        <img src="assets/gear/a.jpeg" alt="Gear A">
+        <img src="assets/gear/a.jpeg" alt="Gear A" />
         <h3>Canon EOS R50</h3>
       </div>
       <div class="gear-item">
-        <img src="assets/gear/b.jpeg" alt="Gear B">
+        <img src="assets/gear/b.jpeg" alt="Gear B" />
         <h3>Canon EOS 5DS R</h3>
       </div>
       <div class="gear-item">
-        <img src="assets/gear/c.jpeg" alt="Gear C">
+        <img src="assets/gear/c.jpeg" alt="Gear C" />
         <h3>Canon EOS XTi Rebel</h3>
       </div>
       <div class="gear-item">
-        <img src="assets/gear/d.jpeg" alt="Gear D">
+        <img src="assets/gear/d.jpeg" alt="Gear D" />
         <h3>DJI Mini 2</h3>
       </div>
       <div class="gear-item">
-        <img src="assets/gear/e.webp" alt="Gear E">
-        <h3>Gimbal E</h3>
+        <img src="assets/gear/e.webp" alt="Gear E" />
+        <h3>DJI Mic Mini</h3>
       </div>
       <div class="gear-item">
-        <img src="assets/gear/f" alt="Gear F">
-        <h3>Tripod F</h3>
-      </div>
-      <div class="gear-item">
-        <img src="assets/gear/g" alt="Gear G">
-        <h3>Microphone G</h3>
+        <img src="assets/gear/f.jpeg" alt="Gear F" />
+        <h3>Generic Tripod</h3>
       </div>
     </div>
 
+    <h2>Our Lenses</h2>
+    <div class="lenses">
+      <div class="lens-item">
+        <img src="assets/lenses/a.webp" alt="Lens A" />
+        <h3>Canon EF-S 18-55mm</h3>
+        <p>f/3.5-f/5.6</p>
+        <p>No Image Stabalization</p>
+      </div>
+      <div class="lens-item">
+        <img src="assets/lenses/b.webp" alt="Lens B" />
+        <h3>Canon EF-S 55-250mm</h3>
+        <p>f/4-f/5.6</p>
+        <p>With Image Stabalization</p>
+      </div>
+      <div class="lens-item">
+        <img src="assets/lenses/c.webp" alt="Lens C" />
+        <h3>Canon RF 18-55mm</h3>
+        <p><b>IS STM</b></p>
+        <p>f/4.5-f/6.3</p>
+        <p>With Image Stabalization</p>
+      </div>
+      <div class="lens-item">
+        <img src="assets/lenses/d.webp" alt="Lens D" />
+        <h3>Canon RF 55-250mm</h3>
+        <p><b>IS STM</b></p>
+        <p>f/4-f/7.1</p>
+        <p>With Image Stabalization</p>
+      </div>
+      <div class="lens-item">
+        <img src="assets/lenses/e.jpeg" alt="Lens E" />
+        <h3>Canon RF 85mm f/1.2</h3>
+      </div>
+      <div class="lens-item">
+        <img src="assets/lenses/f.jpeg" alt="Lens F" />
+        <h3>Canon EF 100mm Macro</h3>
+      </div>
+      <div class="lens-item">
+        <img src="assets/lenses/g.jpeg" alt="Lens G" />
+        <h3>Canon RF 15-35mm</h3>
+      </div>
+      <div class="lens-item">
+        <img src="assets/lenses/h.jpeg" alt="Lens H" />
+        <h3>Canon RF 24-70mm f/2.8</h3>
+      </div>
+    </div>
   </div>
 </body>
 </html>
