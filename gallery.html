@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Terms of Service - MPhotography</title>
+  <title>Book a Session - MFILM</title>
   <style>
     @font-face {
       font-family: 'primary';
@@ -10,6 +10,7 @@
       font-weight: normal;
       font-style: normal;
     }
+
     body {
       font-family: 'primary', sans-serif;
       background-color: #f0f2f5;
@@ -19,43 +20,41 @@
     }
 
     .container {
+      max-width: 700px;
       margin: auto;
       padding: 50px 20px;
     }
 
     h1, h2 {
-    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    font-family: 'primary', sans-serif;
     color: #2c3e50;
     }
 
     h1 {
-    font-family: 'primary', sans-serif;
     font-size: 2.8em;
     }
 
     h2 {
-    font-family: 'primary', sans-serif;
     font-size: 2em;
     margin-top: 40px;
     }
 
     p {
+    text-align: center;
     font-size: 1.1em;
     color: #555;
     margin: 0 auto 40px auto;
+    max-width: 600px;
     line-height: 1.6;
-    font-family: 'primary', sans-serif;
     }
+
 
     form {
       background: white;
       padding: 30px;
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    h1, h2, p, ul {
-        margin-left: 20px;
     }
 
     label {
@@ -80,33 +79,13 @@
       border: none;
       padding: 12px 24px;
       font-size: 1em;
-      border-radius: 25px;
       cursor: pointer;
+      width: 100%;
       transition: background-color 0.3s ease;
-    }
-    .center-button {
-    text-align: center;
-    margin: 20px 0;
-    }
-
-    .center-button a {
-    display: inline-block;
-    }
-
-    .center-button button {
-    text-align: center;
     }
 
     button:hover {
       background-color: #34495e;
-    }
-
-    hr {
-        border: none;
-        height: 2px;
-        background-color: #34495e;
-        margin-left: 20px;
-        width: 50%;
     }
 
     .navbar {
@@ -177,13 +156,38 @@
         display: flex;
       }
     }
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+    }
+
+    .gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .rouge p, h1 {
+        color: #ff0000;
+    }
+
+
     @media (max-width: 600px) {
       .container {
         padding: 30px 10px;
       }
     }
   </style>
-    
 </head>
 <body>
   <nav class="navbar">
@@ -200,22 +204,38 @@
     </ul>
   </nav>
 
-  <h1>Media Release</h1>
 
-  <h2>Note</h2>
+  <div class="container">
+  <h1>Gallery</h1>
+  <p>Explore some of our favorite moments captured.</p>
 
-  <p>Please read the <a href="tos.html">Terms of Service</a> regarding most terms and application of the media release. </p>
+  <div class="rouge"><h1>Nothing... YET!</h1></div>
 
-  <h2>Download</h2>
-  <p>If there are multiple people attending the event ensure all attendees sign the following release downloadable by the button below as a PDF. Last Revised Jul 2025. </p>
-  <div class="center-button">
-    <a href="assets/downloads/mediarelease.pdf" download><button>Download PDF (141 KB)</button></a>
+
+
+  <div class="gallery">
+    <img src="assets/gallery/1.jpg" alt="Gallery Image 1">
+    <img src="assets/gallery/2.jpg" alt="Gallery Image 2">
+    <img src="assets/gallery/3.jpg" alt="Gallery Image 3">
+    <img src="assets/gallery/4.jpg" alt="Gallery Image 4">
+    <img src="assets/gallery/5.jpg" alt="Gallery Image 5">
+    <img src="assets/gallery/6.jpg" alt="Gallery Image 6">
+    <img src="assets/gallery/7.jpg" alt="Gallery Image 7">
+    <img src="assets/gallery/8.jpg" alt="Gallery Image 8">
+    <img src="assets/gallery/9.jpg" alt="Gallery Image 9">
+    <img src="assets/gallery/10.jpg" alt="Gallery Image 10">
+    <img src="assets/gallery/11.jpg" alt="Gallery Image 11">
+    <img src="assets/gallery/12.jpg" alt="Gallery Image 12">
+    <img src="assets/gallery/13.jpg" alt="Gallery Image 13">
+    <img src="assets/gallery/14.jpg" alt="Gallery Image 14">
+    <img src="assets/gallery/15.jpg" alt="Gallery Image 15">
+    <img src="assets/gallery/16.jpg" alt="Gallery Image 16">
+    <img src="assets/gallery/17.jpg" alt="Gallery Image 17">
+    <img src="assets/gallery/18.jpg" alt="Gallery Image 18">
   </div>
-  <div class="center-button">
-    <a href="assets/downloads/mediarelease.docx" download><button>Download WORD (18 KB)</button></a>
-  </div>
-    </body>
+</div>
+
+
+
+</body>
 </html>
-
-
-
